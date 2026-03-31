@@ -14,7 +14,7 @@ function showError(msg) {
   weatherInfo.innerHTML = `<p>❌ ${msg}</p>`;
 }
 
-// 🌤 Fetch weather data by city name
+// Fetch weather data by city name
 async function getWeatherByCity(city) {
   const q = encodeURIComponent(city); // handle spaces in city names
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${q}&appid=${apiKey}&units=metric`;
@@ -54,7 +54,7 @@ async function getWeatherByCity(city) {
   }
 }
 
-// 🔍 Search button click
+//  Search button click
 searchBtn.addEventListener("click", () => {
   const city = cityInput.value.trim();
   if (!city) {
@@ -66,7 +66,7 @@ searchBtn.addEventListener("click", () => {
 });
 
 
-// 🔎 Press Enter to search
+//  Press Enter to search
 cityInput.addEventListener("keyup", (e) => {
   if (e.key === "Enter") {
     searchBtn.click();
