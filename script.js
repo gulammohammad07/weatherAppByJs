@@ -1,4 +1,4 @@
-// ✅ Your provided API key (do not share this publicly)
+// Your provided API key (do not share this publicly)
 const apiKey = "183eed4f1de0f7ae57fef236920404fd";
 
 const searchBtn = document.getElementById("srch-btn");
